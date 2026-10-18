@@ -1,0 +1,22 @@
+{
+  "name": "Štucin Najem vozil",
+  "short_name": "Štucin Najem",
+  "description": "Aplikacija za izposojo in vračanje vozil Avtovleka in popravila Štucin.",
+  "start_url": "/rent",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo-stucin.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/logo-stucin.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

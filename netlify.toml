@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 requires Node 20.19+ / 22.12+ — Netlify's default is older.
+  NODE_VERSION = "22"
+
+# SPA fallback: /rent/* and other client-side routes must serve index.html.
+# Prerendered routes (react-snap) have real HTML files in dist/ and win over
+# this rule, so SEO output is unaffected.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

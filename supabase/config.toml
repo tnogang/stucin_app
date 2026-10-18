@@ -1,0 +1,6 @@
+project_id = "iqvulteitxflwpzdbjsx"
+
+[functions.rental-returned-notify]
+# The Database Webhook calls this function without a user JWT;
+# access is protected by the x-rental-webhook-secret header instead.
+verify_jwt = false
